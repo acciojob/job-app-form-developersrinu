@@ -3,10 +3,60 @@
 <html>
 
 <head>
+	<little>Job App Form</little>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+	<form>
+	<div>
+		<label for="name">Name*</label><br>
+		<input type="text" name="name" id="name" required>
+	</div>
+
+	<div>
+		<label for="email">Email*</label><br>
+		<input type="email" name="email" id="email" required>
+	</div>
+
+	<div>
+		<label for="gender">Gender*</label><br>
+		<input type="radio" name="gender" id="male" value="male" required>
+		<label for="male">Male</label>
+		<input type="radio" name="gender" id="female" value="female" required>
+		<label for="female">Female</label>
+		<input type="radio" name="gender" id="other" value="other" required>
+		<label for="other">Other</label>
+	</div>
+
+	<div>
+		<label for="laptop">Laptop Brand*</label><br>
+		<select name="laptop" id="laptop" required>
+			<option value="Apple">Apple</option>
+			<option value="Asus">Asus</option>
+			<option value="HP">HP</option>
+		</select>
+	</div>
+
+	<div>
+		<label for="age">Age*</label><br>
+		<input type="number" name="age" id="age" required>
+	</div>
+
+	<div>
+		<label for="dob">Date of Birth*</label><br>
+		<input type="date" name="dob" id="dob" required>
+	</div>
+
+	<div>
+		<label for="password">Password*</label><br>
+		<input type="password" name="password" id="password" required>
+	</div>
+
+	<button type="submit">Submit</button>
+</form>
+
+		
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
